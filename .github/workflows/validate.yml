@@ -51,7 +51,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v3
         with:
           go-version: 1.x # Latest stable
       - name: compile with no build tags
@@ -118,7 +118,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install go
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@v3
       with:
         go-version: 1.x # Latest stable
     - name: cache go mod and $GOCACHE
